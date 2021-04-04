@@ -10,7 +10,7 @@ RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/
 	-t ys\
 	-p git -p z -p https://github.com/zsh-users/zsh-autosuggestions \
 	-a	'cp /root/share/ssh/* /root/.ssh/'\
-	-a 'chmod 400 /root/.ssh --recursive'\
+	-a 'chmod 600 /root/.ssh/*'\
 	-a 'source "$HOME/.cargo/env"'\
 	-a 'export PATH=$PATH:/root/share/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin'\
 	-a 'export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static'\

@@ -10,6 +10,6 @@ RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/
 	-t ys\
 	-p git -p z -p https://github.com/zsh-users/zsh-autosuggestions \
 	-a	'cp /root/share/ssh/* /root/.ssh/'\
-	-a 'chmod 400 /root/.ssh --recursive'
+	-a 'chmod 600 /root/ssh/*'
 
 CMD ["zsh"]
