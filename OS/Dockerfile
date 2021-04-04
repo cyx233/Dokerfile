@@ -16,6 +16,4 @@ RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/
 	-a 'export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static'\
 	-a 'export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup'
 
-COPY oh-my-zsh /root/.oh-my-zsh
-COPY .zshrc /root/.zshrc
 CMD ["zsh"]
