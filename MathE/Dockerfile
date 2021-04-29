@@ -1,4 +1,4 @@
-FROM robbyjo/ubuntu-mkl:18.04-2019.1
+FROM nobodyxu/intel-mkl
 LABEL Name=dockerfile Version=0.0.1
 
 RUN apt update\
