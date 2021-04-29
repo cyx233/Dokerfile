@@ -2,7 +2,7 @@ FROM nobodyxu/intel-mkl:2020-ubuntu-bionic
 LABEL Name=dockerfile Version=0.0.1
 
 RUN apt update\
-	&& apt install -y zsh vim gdb git\
+	&& apt install -y zsh vim gdb git curl\
 	&& git clone https://github.com/amix/vimrc.git ~/.vim_runtime\
 	&& /root/.vim_runtime/install_awesome_vimrc.sh
 
