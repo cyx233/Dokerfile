@@ -2,7 +2,7 @@ FROM robbyjo/ubuntu-mkl:18.04-2019.1
 LABEL Name=dockerfile Version=0.0.1
 
 RUN apt update\
-	&& apt install -y zsh vim gdb\
+	&& apt install -y zsh vim gdb git\
 	&& git clone https://github.com/amix/vimrc.git ~/.vim_runtime\
 	&& /root/.vim_runtime/install_awesome_vimrc.sh
 
