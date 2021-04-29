@@ -1,4 +1,4 @@
-FROM nobodyxu/intel-mkl:2020-ubuntu-bionic
+FROM intel/oneapi-basekit
 LABEL Name=dockerfile Version=0.0.1
 
 RUN apt update\
