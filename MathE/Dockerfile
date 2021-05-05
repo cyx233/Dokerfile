@@ -2,7 +2,7 @@ FROM intel/oneapi-basekit
 LABEL Name=dockerfile Version=0.0.1
 
 RUN apt update\
-	&& apt install -y zsh vim gdb git wget\
+	&& apt install -y zsh vim gdb git wget time\
 	&& git clone https://github.com/amix/vimrc.git ~/.vim_runtime\
 	&& /root/.vim_runtime/install_awesome_vimrc.sh
 
